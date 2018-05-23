@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(45, 45, 54);
+}
+.header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Atma;
+    padding: 20px 0 20px 0;
+}
+h1 img {
+    max-width: 100px;
+}
+
+.container-fluid {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    border: 2px solid rgba(57, 225, 255, 1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
