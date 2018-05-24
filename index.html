@@ -14,19 +14,31 @@
 <body>
     <div class="header">
         <h1>TIKI<img src="images/logo.png" style="max-width: 100px";>PEDIA</h1>
-        <div class="input-group mb-3 input-group-warning">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-outline-warning" type="button"><div class="search-icon">&#9906;</div></span></button>
-                </div>
-              </div>
+        <form class="searchbox" action="javascript:void(0);">
+            <div class="input-group mb-3 input-group-warning">
+                    <input id="query" type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2" autofocus>
+                    <div class="input-group-append">
+                        <button id="search-btn" class="btn btn-outline-warning" type="button"><div id="search-icon">&#9906;</div></button>
+                    </div>
+            </div>  
+        </form>
     </div>
     
 
 
     <div class="album py-5">
         <div class="container">
-                <div class="row">
+            <div class="row" id="res">
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+                
+    
+            
+                <!-- <div class="row">
                     <div class="col-md-4">
                         <div class="card mb-4 box-shadow">
                         <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
@@ -72,6 +84,10 @@
                         </div>
                         </div>
                     </div>
+                </div> -->
+
+
+    
     <!-- jQuery, Popper and Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
