@@ -1,9 +1,3 @@
-// Select search input upon loading
-// Removed in favor of HTML5 'autofocus' attribute
-// $(document).ready(function(){
-//     $('.form-control').focus();
-// });
-
 $(document).ready(function() {
     $('.searchbox').submit(function(){
         $('#res').html(" ");
@@ -68,13 +62,3 @@ $(document).ready(function() {
     //     }
     // }
 });
-
-
-
-
-
-//Set variables for JSON data
-var title = 0;
-var url = 0;
-var thumbnail = 0;
-var blurb = 0;

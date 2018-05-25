@@ -43,6 +43,8 @@ input:focus {
 #search-icon:hover {
     font-weight: bold;
     font-size: 1.3em;
+    transform: rotate(45deg);
+    transition: 0.2s ease;
 }
 .card {
     text-align: center;
@@ -69,4 +71,7 @@ input:focus {
     background-color: #FFF;
     border-color: orange;
     color: orange;
+}
+#search-btn:hover {
+    
 }
