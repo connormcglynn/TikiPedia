@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
     function callWiki() {
         var query = $('#query').val();
-        var url = "http://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&prop=extracts&exintro&explaintext&exlimit=max&exchars=150&gsrsearch=" + query + "&callback=?";
+        var url = "http://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&prop=extracts&exintro&explaintext&exlimit=max&exchars=120&gsrsearch=" + query + "&callback=?";
         $.ajax({
             url: url,
             type: 'POST',
