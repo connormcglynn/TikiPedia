@@ -1,5 +1,6 @@
 body {
     background-color: rgb(45, 45, 54);
+    text-align:center;
 }
 .header {
     width: 100%;
@@ -18,7 +19,6 @@ h1 img {
 }
 input {
     background: transparent !important;
-    /* border: 2px solid rgba(255, 150, 64, 0.404) !important; */
     color: #FFF !important; 
 }
 input:focus {
@@ -40,39 +40,54 @@ input:focus {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-#search-icon:hover {
-    font-weight: bold;
-    font-size: 1.3em;
-    transform: rotate(45deg);
-    transition: 0.2s ease;
+#random-icon {
+    font-family: 'Material Icons';
 }
 .card {
-    text-align: center;
-    width: 200px;
-    height: 300px;
-    margin: 30px;
+    width: 300px;
+    min-height: 300px !important;
+    margin: 20px;
     border: none;
     box-shadow: 0 0 10px rgb(0, 0, 0) !important;
 }
+.card-body {
+    padding: 0 0 20px 0 !important;
+}
+#card-img-div {
+    max-height: 180px;
+    overflow: hidden;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    margin-bottom: 20px !important;
+}
+.card-img-top {
+    position: relative;
+    bottom: 50px;
+    transition: .35s ease;
+}
+.card-img-top:hover {
+    background-color: #FFF;
+    transition: .35s ease;
+    opacity: .9;
+    position: relative;
+    bottom: 50px;
+}
 .card-title {
-    font-family: 'Source Sans Pro';
+    font-family: Montserrat;
     line-height: 1em;
     font-weight: bolder;
     font-size: 1.6em;
+    padding: 0 20px 0 20px !important;
 }
-#view {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    float: left;
+.card-text {
+    padding: 0 20px 0 20px !important;
+}
+#card-view {
     color: #FFF;
     font-weight: bold;
 }
-#view:hover {
+#card-view:hover {
     background-color: #FFF;
     border-color: orange;
     color: orange;
-}
-#search-btn:hover {
-    
 }
