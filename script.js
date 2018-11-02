@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
     function callWiki() {
         var query = $('#query').val();
-        var url = "http://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages&generator=search&exchars=120&exintro=1&explaintext=1&pithumbsize=500&gsrsearch=" + query + "&gsrlimit=12";
+        var url = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages&generator=search&exchars=120&exintro=1&explaintext=1&pithumbsize=500&gsrsearch=" + query + "&gsrlimit=12";
         $.ajax({
             url: url,
             type: 'POST',
@@ -36,7 +36,7 @@ $(document).ready(function() {
         });
     };
     function randomWiki() {
-        var url = "http://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages&list=&generator=random&exchars=120&exintro=1&explaintext=1&pithumbsize=500&grnnamespace=0&grnlimit=12";
+        var url = "https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cpageimages&list=&generator=random&exchars=120&exintro=1&explaintext=1&pithumbsize=500&grnnamespace=0&grnlimit=12";
         $.ajax({
             url: url,
             type: 'POST',
@@ -62,13 +62,13 @@ $(document).ready(function() {
     }
 
     function render(data){
-        var queryURL = "http://en.wikipedia.org/?curid=";
+        var queryURL = "https://en.wikipedia.org/?curid=";
         for (var i in data){
             $('#res').append("<div id='resultdiv' class='card card-body mb-4 box-shadow'><div id='card-img-div'><a target='_blank' href='"+queryURL+data[i].pageid+"'><img class='card-img-top' src='"+imageCheck(data[i])+"'></a></div><p class='card-title'>"+data[i].title+"</p><p class='card-text'>"+data[i].extract+"</p><a target='_blank' href='"+queryURL+data[i].pageid+"'><button id='card-view' type='button' class='btn btn-sm btn-warning'>View</button></a></div>");
         }
     }
     function randomGen(data){
-        var randomURL = "http://en.wikipedia.org/?curid=";
+        var randomURL = "https://en.wikipedia.org/?curid=";
         for (var i in data){
             $('#res').append("<div id='resultdiv' class='card card-body mb-4 box-shadow'><img class='card-img-top' src='"+imageCheck(data[i])+"'><p class='card-title'>"+data[i].title+"</p><p class='card-text'>"+data[i].extract+"</p><a target='_blank' href='"+randomURL+data[i].pageid+"'><button id='card-view' type='button' class='btn btn-sm btn-warning'>View</button></a></div>");
         }
